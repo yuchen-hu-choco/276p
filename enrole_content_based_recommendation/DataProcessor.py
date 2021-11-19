@@ -1,7 +1,8 @@
 import pandas as pd
 import GraphMaker
-import DFConverter
+import JobDFConverter
 import DataCleaner
+import SurveyDFConverter
 
 
 def create_candidate_dataframe(path):
@@ -10,6 +11,8 @@ def create_candidate_dataframe(path):
 
     dataframe = survey[['Country', 'FormalEducation', 'YearsCoding', 'CompanySize', 'Employment']]
     print("Dataframe created successfully from", path, ". Number of rows: ", dataframe.shape[0]);
+    SurveyDFConverter.convert(dataframe)
+    #print(dataframe.head())
     return dataframe
 
 
@@ -20,7 +23,8 @@ def create_job_dataframe(path):
     dataframe = survey[['Location', 'employmenttype_jobstatus', 'jobdescription']]
     print("Dataframe created successfully from", path, ". Number of rows: ", dataframe.shape[0]);
     # Todo
-    return DFConverter.convert(dataframe)
+    JobDFConverter.convert(dataframe)
+    return dataframe
 
 
 def createGraphs(dataframe):
@@ -35,7 +39,7 @@ def createGraphs(dataframe):
 def main():
     candidate_dataframe = create_candidate_dataframe('survey.csv')
     job_dataframe = create_job_dataframe('jobs.csv')
-    createGraphs(candidate_dataframe)
+    #createGraphs(candidate_dataframe)
     DataCleaner.clean_dataframe(candidate_dataframe)
     DataCleaner.clean_dataframe(job_dataframe)
 
