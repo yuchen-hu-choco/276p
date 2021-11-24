@@ -66,21 +66,21 @@ def plot_education(dataframe, save=None):
         plt.savefig(save);
 
 
-def plot_company_size(dataframe, save=None):
-    plt.figure(figsize=(18, 10))
-    experience = dataframe["CompanySize"].value_counts().reset_index()
-    ax = sns.barplot("CompanySize", "index", data=experience, linewidth=2)
-    plt.xlabel("number of responses")
-    plt.ylabel("Company Size")
-    plt.title("Company size distribution")
-    plt.grid(True, alpha=.3)
-
-    for i, j in enumerate(experience["CompanySize"]):
-        ax.text(.7, i, j, weight="bold")
-    if save is None:
-        plt.show()
-    else:
-        plt.savefig(save);
+# def plot_company_size(dataframe, save=None):
+#     plt.figure(figsize=(18, 10))
+#     experience = dataframe["CompanySize"].value_counts().reset_index()
+#     ax = sns.barplot("CompanySize", "index", data=experience, linewidth=2)
+#     plt.xlabel("number of responses")
+#     plt.ylabel("Company Size")
+#     plt.title("Company size distribution")
+#     plt.grid(True, alpha=.3)
+#
+#     for i, j in enumerate(experience["CompanySize"]):
+#         ax.text(.7, i, j, weight="bold")
+#     if save is None:
+#         plt.show()
+#     else:
+#         plt.savefig(save);
 
 
 def ploy_employment(dataframe, save=None):
