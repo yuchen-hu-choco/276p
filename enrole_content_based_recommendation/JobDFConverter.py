@@ -7,7 +7,7 @@ from monkeylearn import MonkeyLearn
 
 model_id = "ex_Z4hc5c5z"
 key = "e2374b955eee542d869c74f4bb89018a199583a5"
-
+country_list = {'United States', 'Ireland', 'United Kingdom', 'Germany', 'Singapore', 'China', 'Australia', 'Japan', 'India', 'Switzerland', 'France', 'Brazil', 'Mexico', 'Poland', 'Israel', 'Hong Kong', 'Canada', 'Sweden', 'Netherlands', 'Italy'}
 
 # convert to [['Country', 'FormalEducation', 'YearsCoding', 'CompanySize', 'Employment']]
 def preProcessColumn(dataframe):
@@ -26,7 +26,10 @@ def processCountry(dataframe):
             if country.name in job["Country"]:
                 res = country.name
                 break
-        job["Country"] = res
+        if res in country_list:
+            job["Country"] = res
+        else:
+            job["Country"] = "N/A"
 
 def processEmployment(dataframe):
     for index, job in dataframe.iterrows():
@@ -104,7 +107,17 @@ def processExperience(dataframe):
                     else:
                         min_value = num
             if min_value is not None:
-                job["YearsCoding"] = min_value
+                years = int(min_value)
+                if years <= 2:
+                    job["YearsCoding"] = "less than 2 years"
+                elif years <= 4:
+                    job["YearsCoding"] = "3 - 4 years"
+                elif years <= 7:
+                    job["YearsCoding"] = "5 - 7 years"
+                elif years <= 10:
+                    job["YearsCoding"] = "7 - 10 years"
+                else:
+                    job["YearsCoding"] = "more than 10 years"
 
 
 
@@ -115,5 +128,4 @@ def convert(dataframe):
     processEducation(dataframe)
     processExperience(dataframe)
     dataframe.drop(['employmenttype_jobstatus', 'jobdescription'], axis=1, inplace=True)
-    print(dataframe)
     return dataframe

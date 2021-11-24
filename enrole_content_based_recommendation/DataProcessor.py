@@ -10,8 +10,9 @@ def create_candidate_dataframe(path):
     pd.options.display.max_columns = None
 
     dataframe = survey[['Country', 'FormalEducation', 'YearsCoding', 'Employment']]
-    print("Dataframe created successfully from", path, ". Number of rows: ", dataframe.shape[0]);
+    print("Dataframe created successfully from", path, ". Number of rows: ", dataframe.shape[0])
     SurveyDFConverter.convert(dataframe)
+    print(dataframe["Country"].value_counts());
     #print(dataframe.head())
     return dataframe
 
@@ -21,9 +22,9 @@ def create_job_dataframe(path):
     pd.options.display.max_columns = None
 
     dataframe = survey[['Location', 'employmenttype_jobstatus', 'jobdescription']]
-    print("Dataframe created successfully from", path, ". Number of rows: ", dataframe.shape[0]);
-    # Todo
+    print("Dataframe created successfully from", path, ". Number of rows: ", dataframe.shape[0])
     JobDFConverter.convert(dataframe)
+    print(dataframe["Country"].value_counts());
     return dataframe
 
 
@@ -40,8 +41,7 @@ def main():
     candidate_dataframe = create_candidate_dataframe('survey.csv')
     job_dataframe = create_job_dataframe('jobs.csv')
     createGraphs(candidate_dataframe)
-    DataCleaner.clean_dataframe(candidate_dataframe)
-    DataCleaner.clean_dataframe(job_dataframe)
-
+    DataCleaner.clean_dataframe(candidate_dataframe).to_csv("candidate_matrix", sep='\t', encoding='utf-8', index=False)
+    DataCleaner.clean_dataframe(job_dataframe).to_csv("job_matrix", sep='\t', encoding='utf-8', index=False)
 
 main()
