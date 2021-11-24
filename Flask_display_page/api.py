@@ -25,12 +25,21 @@ tasks = [
 ]
 
 @app.route('/')
-def indext():
-	return render_template('index.html', username = '111')
+def index():
+	return render_template('index.html')
 
-# @app.route('/index')
-# def index():
-# 	return render_template('try.html')
+@app.route('/job_listing')
+def jobListing():
+	return render_template('job_listing.html')
+
+
+@app.route('/about')
+def about():
+	return render_template('about.html')
+
+@app.route('/contact')
+def contact():
+	return render_template('contact.html')
 
 # @app.route('/todo/api/tasks', methods=['GET'])
 # def getTasks():
