@@ -1,0 +1,40 @@
+<script src=></script>
+<script src="{{ url_for('static', filename='js/load_data.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/vendor/jquery-1.12.4.min.js') }}"></script>
+<script>
+$(document).ready(function(){
+//   $("button").click(function(){
+    $.ajax({url: "http://127.0.0.1:5000/job_listings_get_api", success: function(result){
+        var data = result.jobs;
+        data.forEach(element => {           
+            $("#data").append(
+                "<div class='company-img'>" +
+            "<a href='#'><img src='{{ url_for('static', filename='assets/img/icon/job-list1.png') }}' alt=''></a>" +
+            "</div>" +
+            "<div class='job-tittle job-tittle2'>" +
+            "<a href='#'>" +
+            "<h4 id = 'title'>"+ element.title +"</h4>" +
+            "</a>" + 
+            "<ul>" + 
+            "<li id = 'company' >" + element.company + "</li>" + 
+            "<li><i id = 'location' class='fas fa-map-marker-alt'></i>" + element.location + 
+            "</ul>" + 
+            "</div>");
+        });
+
+    }});
+});
+</script>
+</head>
+<body>
+<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+<button>Get External Content</button>
+
+<div id = "data">
+</div>
+
+</div>
+
+</body>
+</html>

@@ -9,19 +9,31 @@ app = Flask(__name__)
 api = Api(app)
 bootstrap = Bootstrap(app)
 
-tasks = [
+jobs = [
     {
-        'id': 1,
-        'title': u'Buy groceries',
-        'description': u'Milk, Cheese, Pizza, Fruit, Tylenol',
-        'done': False
+        'img': "1",
+        'title': 'Digital Marketer',
+        'company': 'Galaxy Systems, Inc.',
+        'location': 'Athens, Greece'
     },
     {
-        'id': 2,
-        'title': u'Learn Python',
-        'description': u'Need to find a good Python tutorial on the web',
-        'done': False
-    }
+        'img': "2",
+        'title': 'Software Engineer',
+        'company': 'Genesis10',
+        'location': 'Frankfurt, Germany'
+    },
+    {
+        'img': "3",
+        'title': 'Site Reliability Engineer',
+        'company': 'Digital Intelligence Systems, LLC',
+        'location': 'Singapore'
+    },
+    {
+        'img': "4",
+        'title': 'Software Engineer',
+        'company': 'University of Chicago/IT Services',
+        'location': 'Shanghai, China'
+    },
 ]
 
 @app.route('/')
@@ -41,9 +53,15 @@ def about():
 def contact():
 	return render_template('contact.html')
 
-# @app.route('/todo/api/tasks', methods=['GET'])
-# def getTasks():
-# 	return jsonify({'tasks': tasks})
+
+@app.route('/job_listings_get_api', methods=['GET'])
+def getjobs():
+	return jsonify({'jobs': jobs})
+
+@app.route('/test')
+def test():
+	return render_template('test.html')
+
 
 # #POST方法API，添加数据项
 # @app.route('/todo/api/addTask', methods=['POST'])
