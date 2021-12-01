@@ -12,9 +12,9 @@ bootstrap = Bootstrap(app)
 jobs = [
     {
         'img': "1",
-        'title': 'Digital Marketer',
+        'title': 'Software Engineer',
         'company': 'Galaxy Systems, Inc.',
-        'location': 'Athens, Greece'
+        'location': 'Mountain View, CA, United States'
     },
     {
         'img': "2",
@@ -31,8 +31,44 @@ jobs = [
     {
         'img': "4",
         'title': 'Software Engineer',
-        'company': 'University of Chicago/IT Services',
-        'location': 'Shanghai, China'
+        'company': 'Tellus Solutions',
+        'location': 'Sunnyvale, CA, United States'
+    },
+    {
+        'img': "5",
+        'title': 'Software Engineer',
+        'company': 'TransTech LLC',
+        'location': 'Sunnyvale, CA, United States'
+    },
+    {
+        'img': "6",
+        'title': 'Site Reliability Engineer',
+        'company': 'Noble1',
+        'location': 'San Francisco, CA, United States'
+    },
+    {
+        'img': "7",
+        'title': 'QA Engineer',
+        'company': 'Maxonic, Inc.',
+        'location': 'Seattle, WA, United States'
+    },
+    {
+        'img': "8",
+        'title': 'Software Engineer',
+        'company': 'VanderHouwen & Associates, Inc.',
+        'location': 'Paris, France'
+    },
+    {
+        'img': "9",
+        'title': 'Software Engineer',
+        'company': 'Eastridge Workforce Solutions',
+        'location': 'Gurugram, India'
+    },
+    {
+        'img': "10",
+        'title': 'Software Engineer',
+        'company': 'Collabera',
+        'location': 'New York, NY, United States'
     },
 ]
 
@@ -63,7 +99,7 @@ def test():
 	return render_template('test.html')
 
 
-# #POST方法API，添加数据项
+
 # @app.route('/todo/api/addTask', methods=['POST'])
 # def add_task():
 # 	if request.json['title'] == "":
@@ -77,7 +113,6 @@ def test():
 # 	tasks.append(task)
 # 	return jsonify({'tasks': tasks}), 201
 
-# #POST方法API，删除数据项
 # @app.route('/todo/api/deleteTask', methods=['POST'])
 # def delete_task():
 # 	task_id = request.json['id']
