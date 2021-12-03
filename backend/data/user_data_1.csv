@@ -1,0 +1,101 @@
+ID,location,Employment,Position,EducationLevel,UndergraduateMajor,Experience
+1,Germany,"Independent contractor, freelancer, or self-employed","Developer, desktop or enterprise applications;Developer, full-stack","Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",,27
+2,United Kingdom,Employed full-time,"Developer, full-stack;Developer, mobile","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,4
+3,Russian Federation,NA,NA,NA,,0
+4,Albania,NA,NA,"Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",,4
+5,United States,Employed full-time,NA,"Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,8
+6,Germany,Employed full-time,"Designer;Developer, front-end;Developer, mobile","Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",,4
+7,India,Employed full-time,"Developer, back-end;Developer, front-end;Developer, QA or test;DevOps specialist","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,4
+8,United States,Employed full-time,"Developer, back-end;Developer, desktop or enterprise applications;Developer, game or graphics","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,13
+9,Tunisia,"Independent contractor, freelancer, or self-employed","Developer, full-stack","Professional degree (JD, MD, etc.)",,4
+10,United Kingdom,Employed full-time,"Database administrator;Developer, full-stack;Developer, mobile","Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",,4
+11,United Kingdom,Employed full-time,"Developer, back-end;Developer, desktop or enterprise applications;Developer, embedded applications or devices;Developer, front-end","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,2
+12,Spain,Employed full-time,"Designer;Developer, front-end",Some college/university study without earning a degree,,7
+13,Netherlands,Employed full-time,"Designer;Developer, back-end","Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",,20
+14,United States,Employed full-time,"Developer, desktop or enterprise applications;Developer, front-end","Associate degree (A.A., A.S., etc.)",,1
+15,France,Student,NA,"Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,0
+16,United Kingdom,"Independent contractor, freelancer, or self-employed","Database administrator;Developer, back-end;Developer, desktop or enterprise applications;Developer, full-stack;Developer, QA or test;DevOps specialist","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,23
+17,United States,Employed full-time,"Developer, full-stack","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,3
+18,United States,Employed full-time,"Developer, back-end","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,12
+19,United States,Employed full-time,"Developer, full-stack","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,3
+20,Spain,Employed full-time,"Developer, desktop or enterprise applications","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,17
+21,Belgium,Student,NA,"Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",,NA
+22,India,Employed full-time,"Developer, full-stack;Engineer, data","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,2
+23,Germany,Employed full-time,"Developer, back-end;Developer, desktop or enterprise applications;Developer, embedded applications or devices;Developer, QA or test;Educator","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,3
+24,Germany,Employed full-time,"Developer, back-end","Professional degree (JD, MD, etc.)",,20
+25,Portugal,Employed full-time,"Developer, back-end;Developer, full-stack;DevOps specialist;Engineer, data;System administrator","Associate degree (A.A., A.S., etc.)",,18
+26,Canada,Employed full-time,"Developer, full-stack","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,10
+27,United States,Employed full-time,"Database administrator;Developer, full-stack;Engineering manager;Product manager;System administrator","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,20
+28,China,Student,NA,Some college/university study without earning a degree,,NA
+29,Ukraine,Student,NA,"Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",,NA
+30,United Kingdom,Employed full-time,"Data or business analyst;Database administrator;Developer, back-end;Developer, front-end;Developer, full-stack;System administrator","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,2
+31,Russian Federation,Employed full-time,Academic researcher,"Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",,3
+32,Canada,Employed full-time,"Developer, back-end;Developer, desktop or enterprise applications;Developer, front-end;Developer, full-stack;Developer, QA or test","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,10
+33,Belgium,Employed full-time,"Developer, front-end;Developer, full-stack;Developer, mobile","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,14
+34,Germany,"Not employed, but looking for work","Developer, back-end;Developer, full-stack","Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",,NA
+35,United States,"Not employed, but looking for work","Designer;Developer, front-end","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,NA
+36,United Kingdom,Employed full-time,Data or business analyst;Data scientist or machine learning specialist,Some college/university study without earning a degree,,3
+37,France,Employed full-time,"Developer, front-end","Associate degree (A.A., A.S., etc.)",,1
+38,Italy,Employed full-time,"Developer, full-stack;Engineering manager","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,12
+39,United Kingdom,"Independent contractor, freelancer, or self-employed",NA,"Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,1
+40,United States,Student,NA,"Associate degree (A.A., A.S., etc.)",,NA
+41,United States,Employed full-time,"Developer, back-end;Developer, front-end;Developer, full-stack","Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",,20
+42,United States,Employed full-time,"Developer, back-end;Developer, desktop or enterprise applications;Developer, front-end;Developer, full-stack;DevOps specialist","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,10
+43,United States,Employed full-time,"Developer, back-end;Developer, front-end;Developer, full-stack","Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",,29
+44,Brazil,Employed full-time,"Data or business analyst;Developer, back-end;Product manager","Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",,6
+45,France,Employed full-time,"Developer, full-stack","Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",,2
+46,France,Employed full-time,"Developer, back-end;Developer, desktop or enterprise applications;Developer, embedded applications or devices;Developer, game or graphics","Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",,4
+47,United Kingdom,Employed full-time,"Data scientist or machine learning specialist;Developer, back-end;Developer, QA or test;Engineer, data;Scientist","Other doctoral degree (Ph.D., Ed.D., etc.)",,28
+48,United States,Employed full-time,"Developer, back-end","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,8
+49,United States,Employed full-time,"Developer, back-end;Developer, desktop or enterprise applications;Developer, front-end;Developer, full-stack","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,4
+50,Austria,"Independent contractor, freelancer, or self-employed","Designer;Developer, front-end;Developer, full-stack",Some college/university study without earning a degree,,9
+51,Canada,Employed full-time,"Developer, back-end;Developer, front-end;Developer, full-stack",Some college/university study without earning a degree,,7
+52,United Kingdom,Employed full-time,"Developer, mobile","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,6
+53,United States,"Independent contractor, freelancer, or self-employed","Academic researcher;Developer, full-stack","Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",,3
+54,United States,Employed full-time,"Developer, full-stack","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,23
+55,United States,"Not employed, but looking for work",NA,"Associate degree (A.A., A.S., etc.)",,NA
+56,United States,Employed full-time,"Developer, full-stack","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,4
+57,United States,Employed full-time,"Database administrator;Designer;Developer, back-end;Developer, desktop or enterprise applications;Developer, front-end;Developer, full-stack;Product manager","Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",,23
+58,India,"Independent contractor, freelancer, or self-employed","Developer, back-end",NA,,NA
+59,Brazil,Employed full-time,"Data or business analyst;Developer, back-end;Developer, front-end;Developer, full-stack;Developer, QA or test","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,15
+60,Germany,Student,NA,NA,,NA
+61,Mexico,Employed full-time,"Developer, full-stack","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,9
+62,United Kingdom,Student,NA,Some college/university study without earning a degree,,NA
+63,India,"Not employed, but looking for work","Designer;Developer, back-end;Developer, front-end;Developer, mobile;Developer, QA or test","Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",,NA
+64,United Kingdom,Employed full-time,"Developer, back-end;Developer, full-stack;Educator",Some college/university study without earning a degree,,13
+65,United States,Employed full-time,"Developer, back-end;Developer, front-end;Developer, full-stack","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,14
+66,Canada,Student,NA,NA,,NA
+67,United States,Employed full-time,"Developer, full-stack;Product manager;Senior executive/VP","Professional degree (JD, MD, etc.)",,15
+68,United States,Student,NA,Some college/university study without earning a degree,,NA
+69,France,Employed full-time,"Data scientist or machine learning specialist;Database administrator;Developer, back-end;Developer, full-stack;Engineer, data","Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",,3
+70,United Kingdom,Employed full-time,NA,NA,,6
+71,France,Employed full-time,"Developer, full-stack","Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",,2
+72,United States,"Not employed, but looking for work","Data or business analyst;Data scientist or machine learning specialist;Engineer, data","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,NA
+73,Sweden,Employed full-time,"Developer, front-end;Developer, full-stack","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,15
+74,United Kingdom,"Independent contractor, freelancer, or self-employed","Database administrator;Developer, back-end;Developer, desktop or enterprise applications;Developer, embedded applications or devices;Developer, front-end;Developer, full-stack;Developer, game or graphics;DevOps specialist;Educator","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,11
+75,Canada,Employed full-time,"Developer, full-stack;DevOps specialist","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,NA
+76,United States,Student,NA,Some college/university study without earning a degree,,NA
+77,United States,Employed full-time,Academic researcher;Data scientist or machine learning specialist;Scientist,"Other doctoral degree (Ph.D., Ed.D., etc.)",,16
+78,Canada,Student,NA,"Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,NA
+79,Canada,Employed full-time,"Developer, full-stack",NA,,7
+80,United States,Employed full-time,DevOps specialist,"Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,7
+81,United States,Student,NA,"Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",,NA
+82,United States,Employed full-time,"Developer, back-end;Developer, full-stack;Developer, mobile","Associate degree (A.A., A.S., etc.)",,25
+83,Poland,Employed full-time,"Developer, back-end","Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)",,Less than 1 year
+84,United States,Employed full-time,"Developer, back-end;Developer, front-end;Developer, full-stack","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,2
+85,United States,Employed part-time,"Developer, back-end;Developer, desktop or enterprise applications;Developer, full-stack",Some college/university study without earning a degree,,1
+86,France,"Independent contractor, freelancer, or self-employed","Developer, back-end;Developer, front-end;Developer, full-stack;Developer, mobile;Senior executive/VP","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,3
+87,Mexico,Employed full-time,"Developer, back-end;Developer, desktop or enterprise applications;Developer, embedded applications or devices","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,2
+88,Canada,Student,NA,Some college/university study without earning a degree,,NA
+89,United States,Employed full-time,"Developer, front-end;Developer, full-stack","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,2
+90,Indonesia,Employed full-time,Designer,Some college/university study without earning a degree,,2
+91,France,Employed full-time,"Developer, back-end;Developer, full-stack;DevOps specialist;System administrator","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,10
+92,Greece,Employed full-time,"Academic researcher;Database administrator;Developer, back-end;Developer, desktop or enterprise applications;Developer, embedded applications or devices;Developer, front-end;Developer, full-stack;Developer, game or graphics;Developer, mobile;Educator;Scientist;System administrator","Other doctoral degree (Ph.D., Ed.D., etc.)",,15
+93,Canada,Employed full-time,NA,Some college/university study without earning a degree,,2
+94,Canada,Employed full-time,"Developer, full-stack",Some college/university study without earning a degree,,25
+95,Israel,Employed part-time,"Designer;Developer, back-end;Developer, front-end;Developer, full-stack;Educator","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,2
+96,Canada,Employed full-time,"Developer, back-end","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,4
+97,Czech Republic,Employed full-time,"Developer, desktop or enterprise applications;Engineering manager","Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",,5
+98,Canada,Employed full-time,"Developer, back-end;Developer, front-end;Developer, full-stack;Developer, mobile","Bachelor’s degree (B.A., B.S., B.Eng., etc.)",,9
+99,United States,Employed full-time,"Developer, back-end;Developer, front-end;Developer, full-stack;Developer, mobile","Associate degree (A.A., A.S., etc.)",,11
+100,,,,,,
