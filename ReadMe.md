@@ -40,9 +40,9 @@ Because lacking of the user action data or user rating scores, we use the profil
 > - The job profiles are in the job_data_2.csv and job_data_3.csv.
 > - Run all cells in the HybridRecommendationSystem.ipynb
 
-## Getting recommendations RESTFul api
+## Getting recommendations through RESTFul api
 > - Using Pycharm to open the Backend folder as a project
 > - Installing the required dependancies
 > - Making Post request in the following format
 <img width="1127" alt="Screen Shot 2021-12-04 at 7 33 59 PM" src="https://user-images.githubusercontent.com/62589505/144732382-f7c5610d-4f52-4968-8919-249fe4305989.png">
-> - The backend will then return recommendation result as the response
+The backend will then return recommendation result as the response
