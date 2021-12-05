@@ -3,13 +3,13 @@
 ## Introduction
 This system is used to support Enrole app which is a mobile application for matching job seeker and recruiter in the technical field.
 It is very basic version which neglect the accuracy and speed. The main purpose of this project is to present a completed and deployed hybrid recommendation system with preprocessed input data set in one-hot matrix, which can be improved and upgraded in the future.
-Our work includes creating an input data frame, preprocessed the raw data, building the content-based filtering model, customizing the collaborative filtering model, deploying the system on the Amazon Segamaker, and build a webpage to visualize it.
+Our work includes creating an input data frame, preprocessed the raw data, building the content-based filtering model, customizing the collaborative filtering model, deploying the system using Flask, and build a webpage to visualize it.
 
 ## Highlights:
 
 > - Use user profiles and job profiles as content based filtering
 > - Use user-job similarity score as collaborative filtering to capture latent features and preferences of users
-> - The recommendation system is deployed using Amazon Segamaker and visualization by a temporary webpage.
+> - The recommendation system is deployed using Flask and visualization by a temporary webpage.
 
 
 ## Data
@@ -46,7 +46,6 @@ Because lacking of the user action data or user rating scores, we use the profil
 > - Making Post request in the following format
 <img width="1127" alt="Screen Shot 2021-12-04 at 7 33 59 PM" src="https://user-images.githubusercontent.com/62589505/144732382-f7c5610d-4f52-4968-8919-249fe4305989.png">
 The backend will then return recommendation result as the response
-
 ## Getting recommendations through our website
 >- Run ```python Flask_display_page\api.py```
 >- Open http://127.0.0.1:5000/
