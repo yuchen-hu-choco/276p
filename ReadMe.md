@@ -51,6 +51,5 @@ The backend will then return recommendation result as the response
 >- Run ```python Flask_display_page\api.py```
 >- Open http://127.0.0.1:5000/
 >- Explore our website!
-(screenshot/Index.png)
-(screenshot/Algo.png)
-(screenshot/JobList.png)
+>
+![Page1](/screenshot/Index.png)
