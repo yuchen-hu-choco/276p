@@ -46,3 +46,11 @@ Because lacking of the user action data or user rating scores, we use the profil
 > - Making Post request in the following format
 <img width="1127" alt="Screen Shot 2021-12-04 at 7 33 59 PM" src="https://user-images.githubusercontent.com/62589505/144732382-f7c5610d-4f52-4968-8919-249fe4305989.png">
 The backend will then return recommendation result as the response
+
+## Getting recommendations through our website
+>- Run ```python Flask_display_page\api.py```
+>- Open http://127.0.0.1:5000/
+>- Explore our website!
+(screenshot/Index.png)
+(screenshot/Algo.png)
+(screenshot/JobList.png)
