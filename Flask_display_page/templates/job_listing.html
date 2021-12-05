@@ -24,22 +24,6 @@
             <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/nice-select.css') }}">
             <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
             <script src="{{ url_for('static', filename='assets/js/vendor/jquery-1.12.4.min.js') }}"></script>
-            <script>
-                $(document).ready(function(){
-                //   $("button").click(function(){
-                    $.ajax({url: "http://127.0.0.1:5000/job_listings_get_api", success: function(result){
-                        var data = result.jobs;
-                        var i = 0;
-                        data.forEach(element => {   
-                            $("#list").find("h4").eq(i).html(element.title);
-                            $("#list").find("li").eq(i * 2).html(element.company);
-                            $("#list").find("li").eq(i * 2 + 1).html(element.location);
-                            i = i + 1;
-                        });
-                
-                    }});
-                });
-                </script>
    </head>
 
    <body>
@@ -115,7 +99,7 @@
 
                             <div class="single-listing">
                                <div class="small-section-tittle2">
-                                     <h4>Top 10 jobs recommended based on artificial intelligence algorithms.</h4>
+                                     <h4>Jobs recommended based on artificial intelligence algorithms.</h4>
                                </div>
                             </div>
 
@@ -129,155 +113,22 @@
                         <section class="featured-job-area">
                             <div class="container" id = "list">
                                 <!-- single-job-content -->
+                            {% for item in list %}
                                 <div  class="single-job-items mb-30">
                                     <div class="job-items">
 
                                         <div class="job-tittle job-tittle2">
                                             <a href="#">
-                                                <h4 id = "title">title</h4>
+                                                <h4 id = "title">{{item.Company}}</h4>
                                             </a>
                                             <ul>
-                                                <li id = "company">Company</li>
-                                                <li><i class="fas fa-map-marker-alt"></i>location</li>
+                                                <li id = "company">{{item.Employment}}</li>
+                                                <li><i class="fas fa-map-marker-alt"></i>{{item.Country}}</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- single-job-content -->
-                                <div  class="single-job-items mb-30">
-                                    <div class="job-items">
-
-                                        <div class="job-tittle job-tittle2">
-                                            <a href="#">
-                                                <h4 id = "title"></h4>
-                                            </a>
-                                            <ul>
-                                                <li></li>
-                                                <li><i class="fas fa-map-marker-alt"></i></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- single-job-content -->
-                                <div  class="single-job-items mb-30">
-                                    <div class="job-items">
-
-                                        <div class="job-tittle job-tittle2">
-                                            <a href="#">
-                                                <h4 id = "title"></h4>
-                                            </a>
-                                            <ul>
-                                                <li></li>
-                                                <li><i class="fas fa-map-marker-alt"></i></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- single-job-content -->
-                                <div  class="single-job-items mb-30">
-                                    <div class="job-items">
-
-                                        <div class="job-tittle job-tittle2">
-                                            <a href="#">
-                                                <h4 id = "title"></h4>
-                                            </a>
-                                            <ul>
-                                                <li></li>
-                                                <li><i class="fas fa-map-marker-alt"></i></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                                                <!-- single-job-content -->
-                                                                <div  class="single-job-items mb-30">
-                                                                    <div class="job-items">
-                                
-                                                                        <div class="job-tittle job-tittle2">
-                                                                            <a href="#">
-                                                                                <h4 id = "title"></h4>
-                                                                            </a>
-                                                                            <ul>
-                                                                                <li></li>
-                                                                                <li><i class="fas fa-map-marker-alt"></i></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>   
-                                                                                                <!-- single-job-content -->
-                                <div  class="single-job-items mb-30">
-                                    <div class="job-items">
-
-                                        <div class="job-tittle job-tittle2">
-                                            <a href="#">
-                                                <h4 id = "title"></h4>
-                                            </a>
-                                            <ul>
-                                                <li></li>
-                                                <li><i class="fas fa-map-marker-alt"></i></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>   
-                                                                <!-- single-job-content -->
-                                                                <div  class="single-job-items mb-30">
-                                                                    <div class="job-items">
-                                
-                                                                        <div class="job-tittle job-tittle2">
-                                                                            <a href="#">
-                                                                                <h4 id = "title"></h4>
-                                                                            </a>
-                                                                            <ul>
-                                                                                <li></li>
-                                                                                <li><i class="fas fa-map-marker-alt"></i></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>   
-                                                                                                <!-- single-job-content -->
-                                <div  class="single-job-items mb-30">
-                                    <div class="job-items">
-
-                                        <div class="job-tittle job-tittle2">
-                                            <a href="#">
-                                                <h4 id = "title"></h4>
-                                            </a>
-                                            <ul>
-                                                <li></li>
-                                                <li><i class="fas fa-map-marker-alt"></i></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>   
-                                                                <!-- single-job-content -->
-                                                                <div  class="single-job-items mb-30">
-                                                                    <div class="job-items">
-                                
-                                                                        <div class="job-tittle job-tittle2">
-                                                                            <a href="#">
-                                                                                <h4 id = "title"></h4>
-                                                                            </a>
-                                                                            <ul>
-                                                                                <li></li>
-                                                                                <li><i class="fas fa-map-marker-alt"></i></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>   
-                                                                                                <!-- single-job-content -->
-                                <div  class="single-job-items mb-30">
-                                    <div class="job-items">
-
-                                        <div class="job-tittle job-tittle2">
-                                            <a href="#">
-                                                <h4 id = "title"></h4>
-                                            </a>
-                                            <ul>
-                                                <li></li>
-                                                <li><i class="fas fa-map-marker-alt"></i></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>                                                                  
+                            {% endfor %}                                                                       
                             </div>
                         </section>
                         <!-- Featured_job_end -->

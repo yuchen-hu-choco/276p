@@ -1,13 +1,60 @@
+import re
 from flask import Flask
 from flask_restful import Resource, Api
 import jsonify
 from flask import Flask, jsonify, make_response, request, abort, render_template, url_for
 from flask_bootstrap import Bootstrap
-
+import algo
 
 app = Flask(__name__)
 api = Api(app)
 bootstrap = Bootstrap(app)
+
+@app.route('/')
+def index():
+	return render_template('index.html')
+
+@app.route('/job_listing')
+def jobListing():
+	return render_template('job_listing.html')
+
+
+@app.route('/about')
+def about():
+	return render_template('about.html')
+
+@app.route('/contact')
+def contact():
+	return render_template('contact.html')
+
+
+@app.route('/test')
+def test():
+	return render_template('test.html')
+
+@app.route('/job_listings_get_api', methods=['POST'])
+def post():
+    print(request.form)
+    title = request.form.get("title")
+    if title is None:
+        title = "Software Engineer"
+    location = request.form.get("location")
+    if location is None:
+        location = " "
+    education = request.form.get("education")
+    years = request.form.get("years")
+    skills = request.form.get("skills")
+    if skills is None:
+        skills = " "
+    employment = request.form.get("employment")
+    result = algo.getRecommendation(title, location, education, years, skills, employment)
+    print(result)
+    return render_template('job_listing.html', list = result)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
 
 jobs = [
     {
@@ -71,61 +118,3 @@ jobs = [
         'location': 'New York, NY, United States'
     },
 ]
-
-@app.route('/')
-def index():
-	return render_template('index.html')
-
-@app.route('/job_listing')
-def jobListing():
-	return render_template('job_listing.html')
-
-
-@app.route('/about')
-def about():
-	return render_template('about.html')
-
-@app.route('/contact')
-def contact():
-	return render_template('contact.html')
-
-
-@app.route('/job_listings_get_api', methods=['GET'])
-def getjobs():
-	return jsonify({'jobs': jobs})
-
-@app.route('/test')
-def test():
-	return render_template('test.html')
-
-
-
-# @app.route('/todo/api/addTask', methods=['POST'])
-# def add_task():
-# 	if request.json['title'] == "":
-# 		abort(400)
-# 	task = {
-# 		'id' : tasks[-1]['id'] + 1,
-# 		'title': request.json['title'],
-# 		'description' : request.json.get('description', ""),
-# 		'done' : False
-# 	}
-# 	tasks.append(task)
-# 	return jsonify({'tasks': tasks}), 201
-
-# @app.route('/todo/api/deleteTask', methods=['POST'])
-# def delete_task():
-# 	task_id = request.json['id']
-# 	for task in tasks:
-# 		if task['id'] == task_id:
-# 			tasks.remove(task)
-# 			return jsonify({'tasks': tasks}), 201
-
-
-# #404
-# @app.errorhandler(404)
-# def not_found(error):
-# 	return make_response(jsonify({'error': 'Not found'}), 404)
-
-if __name__ == '__main__':
-    app.run(debug=True)

@@ -78,66 +78,74 @@
                             </div>
                         </div>
                         <!-- Search Box -->
+
+
+
                         <div class="row">
                             <div class="col-xl-8">
+
                                 <!-- form -->
-                                <form action="#" class="search-box">
+                                <form action = "/job_listings_get_api" method = "post" id= "user_form" class="search-box">
                                     <div class="input-form">
-                                        <input type="text" placeholder="Job Tittle">
+                                        <input type="text" name= "title" placeholder="Job Tittle">
                                     </div>
 
                                     <div class="select-form">
                                         <div class="select-itms">
-                                            <select name="select" id="select1">
-                                                <option value="">CS Undergraduate Major</option>
-                                                <option value="">Non-CS Undergraduate Major</option>
-
+                                            <select name="years">
+                                                <option value="1">Industry Experience</option>
+                                                <option value="1">Less than 2 years</option>
+                                                <option value="3">2 - 5 years</option>
+                                                <option value="7">5 - 10 years</option>
+                                                <option value="15">More than 10 years</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="search-form">
-                                        <a href="#"></a>
+                                        <a></a>
                                     </div>	
-                                <!-- form -->
-                                <form action="#" class="search-box">
+
                                     <div class="input-form">
-                                        <input type="text" placeholder="Skill">
+                                        <input type="text" name="skills" placeholder="Skill">
                                     </div>
 
                                     <div class="select-form">
-                                        <div class="select-itms">
-                                            <select name="select" id="select1">
-                                                <option value="">Education</option>
-                                                <option value="">Bachelor</option>
-                                                <option value="">Master</option>
-                                                <option value="">Phd</option>
-                                                <option value="">None of above</option>
+                                        <div class="select-itms" >
+                                            <select name="education">
+                                                <option value="bachelor">Education</option>
+                                                <option value="bachelor">Bachelor</option>
+                                                <option value="master">Master</option>
+                                                <option value="phd">Phd</option>
+                                                <option value="none of above">None of above</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="search-form" color = #21618c >
-                                        <a href="http://127.0.0.1:5000/job_listing">Find job</a>
+                                        <!-- <a >Find job</a> -->
+                                        <input type="submit" value="Find job"  style="height:70px; width:161.69px; background:#21618c; color: #fff; box-shadow: none; border: none;" >	
                                     </div>	
-                                <!-- form -->
-                                <form action="#" class="search-box">
                                     <div class="input-form">
-                                        <input type="text" placeholder="Location">
+                                        <input type="text" name="location" placeholder="Location">
                                     </div>
-
 
                                     <div class="select-form">
                                         <div class="select-itms">
-                                            <select name="select" id="select1">
-                                                <option value="">Employment</option>
-                                                <option value="">Full-time</option>
-                                                <option value="">Part-time</option>
+                                            <select  name= "employment" id="employment">
+                                                <option value="fulltime">Employment</option>
+                                                <option value="fulltime">Full-time</option>
+                                                <option value="parttime">Part-time</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="search-form">
-                                        <a href="#"></a>
+                                        <a></a>
                                     </div>	
                                 </form>	
+
+
+
+
+
                             </div>
                         </div>
                     </div>
@@ -163,7 +171,7 @@
                                 <span class="flaticon-tour"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Java Engineer</a></h5>
+                               <h5>Java Engineer</h5>
 
                             </div>
                         </div>
@@ -174,7 +182,7 @@
                                 <span class="flaticon-cms"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Back End Engineer</a></h5>
+                               <h5>Back End Engineer</h5>
 
                             </div>
                         </div>
@@ -185,7 +193,7 @@
                                 <span class="flaticon-report"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">DevOps Engineer</a></h5>
+                               <h5>DevOps Engineer</h5>
 
                             </div>
                         </div>
@@ -196,7 +204,7 @@
                                 <span class="flaticon-app"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Quality Assurance Engineer</a></h5>
+                               <h5>Quality Assurance Engineer</h5>
 
                             </div>
                         </div>
@@ -207,7 +215,7 @@
                                 <span class="flaticon-helmet"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Site Reliability Engineer</a></h5>
+                               <h5>Site Reliability Engineer</h5>
 
                             </div>
                         </div>
@@ -218,7 +226,7 @@
                                 <span class="flaticon-high-tech"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Data Engineer</a></h5>
+                               <h5>Data Engineer</h5>
     
                             </div>
                         </div>
@@ -229,7 +237,7 @@
                                 <span class="flaticon-real-estate"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Infrastructure & Engineering Developer</a></h5>
+                               <h5>Infrastructure & Engineering Developer</h5>
 
                             </div>
                         </div>
@@ -240,7 +248,7 @@
                                 <span class="flaticon-content"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Content Writer</a></h5>
+                               <h5>Content Writer</h5>
       
                             </div>
                         </div>
